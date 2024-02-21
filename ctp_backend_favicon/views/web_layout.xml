@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="web_layout_inherit" model="ir.ui.view">
+            <field name="name">web.layout.inherit</field>
+            <field name="priority">99999</field>
+            <field name="inherit_id" ref="web.layout"/>
+            <field name="arch" type="xml">
+                <xpath expr="//link" position="replace">
+                    <link type="image/x-icon" rel="shortcut icon" t-att-href="x_icon or '/favicon.ico'"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
